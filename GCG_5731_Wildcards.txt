@@ -1,0 +1,12 @@
+@VENDOR@ - Vendor Number
+@VENDOR_NAME@ - Vendor Name
+@CERTIFICATION@ - Certification Name
+@CERT_DESCRIPTION@ - Certification Description
+@ARC_REP@ - Arc-Tronics Representative 
+@ARC_EMAIL@ - Arc-Tronics Representative Email
+@VEND_REP@ - Vendor Representative 
+@VEND_PHONE@ - Vendor Representative Phone
+@VEND_EMAIL@ - Vendor Representative Email
+@START_DATE@ - Certification Start Date
+@END_DATE@ - Certification End Date
+@OASIS_NO@ - OASIS Number
