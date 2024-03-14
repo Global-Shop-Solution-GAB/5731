@@ -1,0 +1,10 @@
+Greetings @VENDOR_NAME@,
+
+Attn: @VEND_REP@ 
+
+Please be advice that our records show your certification "@CERTIFICATION@" is set to expire on the @END_DATE@.
+
+Please reach out to @ARC_REP@, at: @ARC_EMAIL@, as soon as possible with an updated certification.
+
+Best Regards,
+ARC-Tronics.
