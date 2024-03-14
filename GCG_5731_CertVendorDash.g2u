@@ -1,0 +1,538 @@
+﻿Program.Sub.ScreenSU.Start
+Gui.F_Vendor_Dash..Create(BaseForm)
+Gui.F_Vendor_Dash..Size(15210,10875)
+Gui.F_Vendor_Dash..MinX(0)
+Gui.F_Vendor_Dash..MinY(0)
+Gui.F_Vendor_Dash..Position(0,0)
+Gui.F_Vendor_Dash..BackColor(-2147483633)
+Gui.F_Vendor_Dash..MousePointer(0)
+Gui.F_Vendor_Dash..Event(UnLoad,Form_UnLoad)
+Gui.F_Vendor_Dash..Caption("Vendor Certification Dashboard")
+Gui.F_Vendor_Dash..AlwaysOnTop(False)
+Gui.F_Vendor_Dash..FontName("Tahoma")
+Gui.F_Vendor_Dash..FontSize(8.25)
+Gui.F_Vendor_Dash..ControlBox(True)
+Gui.F_Vendor_Dash..MaxButton(True)
+Gui.F_Vendor_Dash..MinButton(True)
+Gui.F_Vendor_Dash..Moveable(True)
+Gui.F_Vendor_Dash..Sizeable(True)
+Gui.F_Vendor_Dash..ShowInTaskBar(True)
+Gui.F_Vendor_Dash..TitleBar(True)
+Gui.F_Vendor_Dash.frmControls.Create(Frame)
+Gui.F_Vendor_Dash.frmControls.Size(14820,1710)
+Gui.F_Vendor_Dash.frmControls.Position(90,60)
+Gui.F_Vendor_Dash.frmControls.Anchor(13)
+Gui.F_Vendor_Dash.frmControls.Caption("Add Certification")
+Gui.F_Vendor_Dash.frmControls.Enabled(True)
+Gui.F_Vendor_Dash.frmControls.Visible(True)
+Gui.F_Vendor_Dash.frmControls.Zorder(0)
+Gui.F_Vendor_Dash.frmControls.FontName("Tahoma")
+Gui.F_Vendor_Dash.frmControls.FontSize(8.25)
+Gui.F_Vendor_Dash.lbl1.Create(Label,"Vendor",True,555,210,0,90,240,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Vendor_Dash.lbl1.Parent("frmControls")
+Gui.F_Vendor_Dash.lbl1.BorderStyle(0)
+Gui.F_Vendor_Dash.txtCertification.Create(TextBox,"",True,1515,300,0,3360,495,True,0,"Arial",8,-2147483643,1)
+Gui.F_Vendor_Dash.txtCertification.Parent("frmControls")
+Gui.F_Vendor_Dash.lbl5.Create(Label,"ARC-Tronics Representative",True,2070,210,0,8265,240,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Vendor_Dash.lbl5.Parent("frmControls")
+Gui.F_Vendor_Dash.lbl5.BorderStyle(0)
+Gui.F_Vendor_Dash.cmdCertBrw.Create(Button)
+Gui.F_Vendor_Dash.cmdCertBrw.Size(390,390)
+Gui.F_Vendor_Dash.cmdCertBrw.Position(4950,435)
+Gui.F_Vendor_Dash.cmdCertBrw.Parent("frmControls")
+Gui.F_Vendor_Dash.cmdCertBrw.Caption("^")
+Gui.F_Vendor_Dash.cmdCertBrw.Event(Click,cmdCertBrw_Click)
+Gui.F_Vendor_Dash.cmdCertBrw.Enabled(True)
+Gui.F_Vendor_Dash.cmdCertBrw.Visible(True)
+Gui.F_Vendor_Dash.cmdCertBrw.Zorder(0)
+Gui.F_Vendor_Dash.cmdCertBrw.FontName("Tahoma")
+Gui.F_Vendor_Dash.cmdCertBrw.FontSize(8.25)
+Gui.F_Vendor_Dash.cmdVendorBrw.Create(Button)
+Gui.F_Vendor_Dash.cmdVendorBrw.Size(390,390)
+Gui.F_Vendor_Dash.cmdVendorBrw.Position(2850,420)
+Gui.F_Vendor_Dash.cmdVendorBrw.Parent("frmControls")
+Gui.F_Vendor_Dash.cmdVendorBrw.Caption("^")
+Gui.F_Vendor_Dash.cmdVendorBrw.Event(Click,cmdVendorBrw_Click)
+Gui.F_Vendor_Dash.cmdVendorBrw.Enabled(True)
+Gui.F_Vendor_Dash.cmdVendorBrw.Visible(True)
+Gui.F_Vendor_Dash.cmdVendorBrw.Zorder(0)
+Gui.F_Vendor_Dash.cmdVendorBrw.FontName("Tahoma")
+Gui.F_Vendor_Dash.cmdVendorBrw.FontSize(8.25)
+Gui.F_Vendor_Dash.lbl4.Create(Label,"Description",True,810,210,0,5520,240,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Vendor_Dash.lbl4.Parent("frmControls")
+Gui.F_Vendor_Dash.lbl4.BorderStyle(0)
+Gui.F_Vendor_Dash.txtCertDesc.Create(TextBox,"",True,2685,300,0,5490,480,True,0,"Arial",8,-2147483643,1)
+Gui.F_Vendor_Dash.txtCertDesc.Parent("frmControls")
+Gui.F_Vendor_Dash.lbl3.Create(Label,"Certification",True,855,210,0,3375,255,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Vendor_Dash.lbl3.Parent("frmControls")
+Gui.F_Vendor_Dash.lbl3.BorderStyle(0)
+Gui.F_Vendor_Dash.lbl2.Create(Label,"Vendor Name",True,990,210,0,1035,240,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Vendor_Dash.lbl2.Parent("frmControls")
+Gui.F_Vendor_Dash.lbl2.BorderStyle(0)
+Gui.F_Vendor_Dash.txtVendOasis.Create(TextBox,"",True,1320,300,0,9780,1275,True,0,"Arial",8,-2147483643,1)
+Gui.F_Vendor_Dash.txtVendOasis.Parent("frmControls")
+Gui.F_Vendor_Dash.txtVendOasis.MaxLength(10)
+Gui.F_Vendor_Dash.txtVendorName.Create(TextBox,"",True,1755,300,0,1035,480,True,0,"Arial",8,-2147483643,1)
+Gui.F_Vendor_Dash.txtVendorName.Parent("frmControls")
+Gui.F_Vendor_Dash.txtCertLiason.Create(TextBox,"",True,2235,300,0,8250,480,True,0,"Arial",8,-2147483643,1)
+Gui.F_Vendor_Dash.txtCertLiason.Parent("frmControls")
+Gui.F_Vendor_Dash.lbl6.Create(Label,"Email",True,360,210,0,10590,255,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Vendor_Dash.lbl6.Parent("frmControls")
+Gui.F_Vendor_Dash.lbl6.BorderStyle(0)
+Gui.F_Vendor_Dash.txtCertEmail.Create(TextBox,"",True,4140,300,0,10590,495,True,0,"Arial",8,-2147483643,1)
+Gui.F_Vendor_Dash.txtCertEmail.Parent("frmControls")
+Gui.F_Vendor_Dash.lbl7.Create(Label,"Vendor Representative",True,1680,210,0,120,1020,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Vendor_Dash.lbl7.Parent("frmControls")
+Gui.F_Vendor_Dash.lbl7.BorderStyle(0)
+Gui.F_Vendor_Dash.txtVendLiason.Create(TextBox,"",True,2190,300,0,105,1260,True,0,"Arial",8,-2147483643,1)
+Gui.F_Vendor_Dash.txtVendLiason.Parent("frmControls")
+Gui.F_Vendor_Dash.lbl8.Create(Label,"Phone",True,450,210,0,2400,1005,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Vendor_Dash.lbl8.Parent("frmControls")
+Gui.F_Vendor_Dash.lbl8.BorderStyle(0)
+Gui.F_Vendor_Dash.txtVendPhone.Create(TextBox,"",True,1230,300,0,2385,1260,True,0,"Arial",8,-2147483643,1)
+Gui.F_Vendor_Dash.txtVendPhone.Parent("frmControls")
+Gui.F_Vendor_Dash.lbl9.Create(Label,"Email",True,360,210,0,3690,1020,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Vendor_Dash.lbl9.Parent("frmControls")
+Gui.F_Vendor_Dash.lbl9.BorderStyle(0)
+Gui.F_Vendor_Dash.cmd_Clear.Create(Button)
+Gui.F_Vendor_Dash.cmd_Clear.Size(855,375)
+Gui.F_Vendor_Dash.cmd_Clear.Position(12570,1230)
+Gui.F_Vendor_Dash.cmd_Clear.Parent("frmControls")
+Gui.F_Vendor_Dash.cmd_Clear.Caption("Clear")
+Gui.F_Vendor_Dash.cmd_Clear.Event(Click,cmd_Clear_Click)
+Gui.F_Vendor_Dash.cmd_Clear.Enabled(True)
+Gui.F_Vendor_Dash.cmd_Clear.Visible(True)
+Gui.F_Vendor_Dash.cmd_Clear.Zorder(0)
+Gui.F_Vendor_Dash.cmd_Clear.FontName("Tahoma")
+Gui.F_Vendor_Dash.cmd_Clear.FontSize(8.25)
+Gui.F_Vendor_Dash.txtVendor.Create(TextBox,"",True,855,300,0,90,480,True,0,"Arial",8,-2147483643,1)
+Gui.F_Vendor_Dash.txtVendor.Parent("frmControls")
+Gui.F_Vendor_Dash.cmdAdd.Create(Button)
+Gui.F_Vendor_Dash.cmdAdd.Size(1245,375)
+Gui.F_Vendor_Dash.cmdAdd.Position(13500,1230)
+Gui.F_Vendor_Dash.cmdAdd.Parent("frmControls")
+Gui.F_Vendor_Dash.cmdAdd.Anchor(9)
+Gui.F_Vendor_Dash.cmdAdd.Caption("Add")
+Gui.F_Vendor_Dash.cmdAdd.Event(Click,cmdAdd_Click)
+Gui.F_Vendor_Dash.cmdAdd.Enabled(True)
+Gui.F_Vendor_Dash.cmdAdd.Visible(True)
+Gui.F_Vendor_Dash.cmdAdd.Zorder(0)
+Gui.F_Vendor_Dash.cmdAdd.FontName("Tahoma")
+Gui.F_Vendor_Dash.cmdAdd.FontSize(8.25)
+Gui.F_Vendor_Dash.lbl12.Create(Label,"OASIS No",True,720,210,0,9780,1035,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Vendor_Dash.lbl12.Parent("frmControls")
+Gui.F_Vendor_Dash.lbl12.BorderStyle(0)
+Gui.F_Vendor_Dash.lbl11.Create(Label,"Cert End Date",True,990,210,0,7770,1050,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Vendor_Dash.lbl11.Parent("frmControls")
+Gui.F_Vendor_Dash.lbl11.BorderStyle(0)
+Gui.F_Vendor_Dash.dtpVendEndDate.Create(DatePicker)
+Gui.F_Vendor_Dash.dtpVendEndDate.Size(1935,285)
+Gui.F_Vendor_Dash.dtpVendEndDate.Position(7740,1275)
+Gui.F_Vendor_Dash.dtpVendEndDate.Parent("frmControls")
+Gui.F_Vendor_Dash.dtpVendEndDate.Enabled(True)
+Gui.F_Vendor_Dash.dtpVendEndDate.Visible(True)
+Gui.F_Vendor_Dash.dtpVendEndDate.Zorder(0)
+Gui.F_Vendor_Dash.dtpVendEndDate.CheckBox(False)
+Gui.F_Vendor_Dash.dtpVendEndDate.FontName("Tahoma")
+Gui.F_Vendor_Dash.dtpVendEndDate.FontSize(8.25)
+Gui.F_Vendor_Dash.dtpVendStartDate.Create(DatePicker)
+Gui.F_Vendor_Dash.dtpVendStartDate.Size(1935,285)
+Gui.F_Vendor_Dash.dtpVendStartDate.Position(5700,1275)
+Gui.F_Vendor_Dash.dtpVendStartDate.Parent("frmControls")
+Gui.F_Vendor_Dash.dtpVendStartDate.Enabled(True)
+Gui.F_Vendor_Dash.dtpVendStartDate.Visible(True)
+Gui.F_Vendor_Dash.dtpVendStartDate.Zorder(0)
+Gui.F_Vendor_Dash.dtpVendStartDate.CheckBox(False)
+Gui.F_Vendor_Dash.dtpVendStartDate.FontName("Tahoma")
+Gui.F_Vendor_Dash.dtpVendStartDate.FontSize(8.25)
+Gui.F_Vendor_Dash.lbl10.Create(Label,"Cert Start Date",True,1065,210,0,5685,1050,True,0,"Arial",8,-2147483633,0,0)
+Gui.F_Vendor_Dash.lbl10.Parent("frmControls")
+Gui.F_Vendor_Dash.lbl10.BorderStyle(0)
+Gui.F_Vendor_Dash.txtVendEmail.Create(TextBox,"",True,1860,300,0,3705,1260,True,0,"Arial",8,-2147483643,1)
+Gui.F_Vendor_Dash.txtVendEmail.Parent("frmControls")
+Gui.F_Vendor_Dash.frmDash.Create(Frame)
+Gui.F_Vendor_Dash.frmDash.Size(14820,7995)
+Gui.F_Vendor_Dash.frmDash.Position(90,1800)
+Gui.F_Vendor_Dash.frmDash.Anchor(15)
+Gui.F_Vendor_Dash.frmDash.Enabled(True)
+Gui.F_Vendor_Dash.frmDash.Visible(True)
+Gui.F_Vendor_Dash.frmDash.Zorder(0)
+Gui.F_Vendor_Dash.frmDash.Caption("")
+Gui.F_Vendor_Dash.frmDash.FontName("Tahoma")
+Gui.F_Vendor_Dash.frmDash.FontSize(8.25)
+Gui.F_Vendor_Dash.GsGcDisplay.Create(GsGridControl)
+Gui.F_Vendor_Dash.GsGcDisplay.Size(14700,7725)
+Gui.F_Vendor_Dash.GsGcDisplay.Position(60,165)
+Gui.F_Vendor_Dash.GsGcDisplay.Parent("frmDash")
+Gui.F_Vendor_Dash.GsGcDisplay.Anchor(15)
+Gui.F_Vendor_Dash.GsGcDisplay.Enabled(True)
+Gui.F_Vendor_Dash.GsGcDisplay.Visible(True)
+Gui.F_Vendor_Dash.GsGcDisplay.Zorder(0)
+Gui.F_Vendor_Dash.cmdSaveChanges.Create(Button)
+Gui.F_Vendor_Dash.cmdSaveChanges.Size(1380,375)
+Gui.F_Vendor_Dash.cmdSaveChanges.Position(13515,9840)
+Gui.F_Vendor_Dash.cmdSaveChanges.Caption("Save Changes")
+Gui.F_Vendor_Dash.cmdSaveChanges.Event(Click,cmdSaveChanges_Click)
+Gui.F_Vendor_Dash.cmdSaveChanges.Enabled(True)
+Gui.F_Vendor_Dash.cmdSaveChanges.Visible(True)
+Gui.F_Vendor_Dash.cmdSaveChanges.Zorder(0)
+Gui.F_Vendor_Dash.cmdSaveChanges.FontName("Tahoma")
+Gui.F_Vendor_Dash.cmdSaveChanges.FontSize(8.25)
+Gui.F_Vendor_Dash.cmdSaveChanges.Anchor(10)
+Gui.F_Vendor_Dash.cmdRefresh.Create(Button)
+Gui.F_Vendor_Dash.cmdRefresh.Size(1245,375)
+Gui.F_Vendor_Dash.cmdRefresh.Position(12180,9840)
+Gui.F_Vendor_Dash.cmdRefresh.Anchor(10)
+Gui.F_Vendor_Dash.cmdRefresh.Caption("Refresh")
+Gui.F_Vendor_Dash.cmdRefresh.Event(Click,cmdRefresh_Click)
+Gui.F_Vendor_Dash.cmdRefresh.Enabled(True)
+Gui.F_Vendor_Dash.cmdRefresh.Visible(True)
+Gui.F_Vendor_Dash.cmdRefresh.Zorder(0)
+Gui.F_Vendor_Dash.cmdRefresh.FontName("Tahoma")
+Gui.F_Vendor_Dash.cmdRefresh.FontSize(8.25)
+Gui.F_Vendor_Dash.chkValid.Create(CheckBox)
+Gui.F_Vendor_Dash.chkValid.Size(1215,300)
+Gui.F_Vendor_Dash.chkValid.Position(10905,9885)
+Gui.F_Vendor_Dash.chkValid.Caption("Show Valid")
+Gui.F_Vendor_Dash.chkValid.Value(1)
+Gui.F_Vendor_Dash.chkValid.Event(Click,chkValid_Click)
+Gui.F_Vendor_Dash.chkValid.Enabled(True)
+Gui.F_Vendor_Dash.chkValid.Visible(True)
+Gui.F_Vendor_Dash.chkValid.Zorder(0)
+Gui.F_Vendor_Dash.chkValid.FontName("Tahoma")
+Gui.F_Vendor_Dash.chkValid.FontSize(8.25)
+Gui.F_Vendor_Dash.chkValid.Anchor(10)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+'Author: Alejandro Anazco V.
+'2/12/2020
+'Programmed for ARC-TRONICS
+'Purpose: Link Vendor to several Certifications
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+f.Intrinsic.Control.Try
+	'Load Icon
+	f.Intrinsic.Control.CallSub(LoadIcon)
+	'Create Display
+	f.Intrinsic.Control.CallSub(createDisplayDT)
+	'Load Properties
+	f.Intrinsic.Control.CallSub(loadGridProperties)
+	gui.F_Vendor_Dash..Show
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+
+Program.Sub.ErrorMsg.Start
+v.Local.sError.Declare
+
+'Closes ODBC connection, default to connection : "con"
+f.Intrinsic.Control.If(v.ODBC!con.State, =, 1)
+	f.ODBC.Connection!con.Close
+f.Intrinsic.Control.EndIf
+
+'Generic Error message.
+f.Intrinsic.String.Build("Project GCG_5731_CertVendorDash.g2u {0}{0}Subroutine: {1}{0}Error: {2} with Description: {3}", v.Ambient.NewLine, v.Args.CurrentSub, v.Ambient.ErrorNumber, v.Ambient.ErrorDescription, v.Local.sError)
+f.Intrinsic.UI.Msgbox(v.Local.sError)
+Program.Sub.ErrorMsg.End
+
+Program.Sub.cmdVendorBrw_Click.Start
+v.Local.sRet.Declare
+f.Intrinsic.Control.Try
+	'Vendor Browser
+	f.ODBC.Connection!con.OpenCompanyConnection
+	 	f.Intrinsic.UI.Browser("Vendor Browser", "con", "Select Vendor, Name_Vendor from V_Vendor_Master where Vendor <> '';", "Vendor*!*Vendor Name", "80*!*140", v.Local.sRet)
+	f.ODBC.Connection!con.Close
+	'If selection is different that Cancel
+	f.Intrinsic.Control.If(v.Local.sRet.Trim, <>, "***CANCEL***")
+		f.Intrinsic.String.Split(v.Local.sRet, "*!*", v.Local.sRet)
+		f.Intrinsic.Control.If(v.Local.sRet.UBound, =, 1)
+			gui.F_Vendor_Dash.txtVendor.Text(v.Local.sRet(0))
+			gui.F_Vendor_Dash.txtVendorName.Text(v.Local.sRet(1))
+		f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.EndIf
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdVendorBrw_Click.End
+
+Program.Sub.cmdCertBrw_Click.Start
+v.Local.sRet.Declare
+f.Intrinsic.Control.Try
+	'Vendor Browser
+	f.ODBC.Connection!con.OpenCompanyConnection
+	 	f.Intrinsic.UI.Browser("Vendor Browser", "con", "Select * from GCG_5731_CERT_MSTR;", "Certification*!*Description*!*ARC-Tronics Representative*!*ARC-Tronics Email", "100*!*140*!*120*!*150", v.Local.sRet)
+	f.ODBC.Connection!con.Close
+	'If selection is different that Cancel
+	f.Intrinsic.Control.If(v.Local.sRet.Trim, <>, "***CANCEL***")
+		f.Intrinsic.String.Split(v.Local.sRet, "*!*", v.Local.sRet)
+		f.Intrinsic.Control.If(v.Local.sRet.UBound, =, 3)
+			gui.F_Vendor_Dash.txtCertification.Text(v.Local.sRet(0))
+			gui.F_Vendor_Dash.txtCertDesc.Text(v.Local.sRet(1))
+			gui.F_Vendor_Dash.txtCertLiason.Text(v.Local.sRet(2))
+			gui.F_Vendor_Dash.txtCertEmail.Text(v.Local.sRet(3))
+		f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.EndIf
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdCertBrw_Click.End
+
+Program.Sub.cmdRefresh_Click.Start
+f.Intrinsic.Control.Try
+	'Load Tmp Table
+	f.ODBC.Connection!con.OpenCompanyConnection
+	 	f.Data.DataTable.CreateFromSQL("tmpDisplayDT", "con", "Select * from GCG_5731_VENDOR_CERT", True)
+	f.ODBC.Connection!con.Close
+	'Merge
+	f.Data.DataTable.DeleteRow("displayDT")
+	f.Data.DataTable.AcceptChanges("displayDT")
+	f.Data.DataTable.Merge("tmpDisplayDT", "displayDT", False, 2)
+	f.Data.DataTable.Close("tmpDisplayDT")
+	f.Data.DataTable.AcceptChanges("displayDT")
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdRefresh_Click.End
+
+Program.Sub.cmdAdd_Click.Start
+v.Local.sVendor.Declare
+v.Local.sVendorName.Declare
+v.Local.sCertification.Declare
+v.Local.sDecription.Declare
+v.Local.sArcLiason.Declare
+v.Local.sArcEmail.Declare
+v.Local.sVendLiason.Declare
+v.Local.sVendPhone.Declare
+v.Local.sVendEmail.Declare
+v.Local.dStartDate.Declare
+v.Local.dEndDate.Declare
+v.Local.sOasisName.Declare
+
+v.Local.sSQL.Declare
+v.Local.sRet.Declare
+f.Intrinsic.Control.Try
+	
+	'Set Values.
+	v.Local.sVendor.Set(v.Screen.F_Vendor_Dash!txtVendor.Text)
+	v.Local.sVendorName.Set(v.Screen.F_Vendor_Dash!txtVendorName.Text)
+	v.Local.sCertification.Set(v.Screen.F_Vendor_Dash!txtCertification.Text)
+	v.Local.sDecription.Set(v.Screen.F_Vendor_Dash!txtCertDesc.Text)
+	v.Local.sArcLiason.Set(v.Screen.F_Vendor_Dash!txtCertLiason.Text)
+	v.Local.sArcEmail.Set(v.Screen.F_Vendor_Dash!txtCertEmail.Text)
+	v.Local.sVendLiason.Set(v.Screen.F_Vendor_Dash!txtVendLiason.Text)
+	v.Local.sVendPhone.Set(v.Screen.F_Vendor_Dash!txtVendPhone.Text)
+	v.Local.sVendEmail.Set(v.Screen.F_Vendor_Dash!txtVendEmail.Text)
+	v.Local.dStartDate.Set(v.Screen.F_Vendor_Dash!dtpVendStartDate.Value)
+	v.Local.dEndDate.Set(v.Screen.F_Vendor_Dash!dtpVendEndDate.Value)
+	v.Local.sOasisName.Set(v.Screen.F_Vendor_Dash!txtVendOasis.Text)
+	'Check Key Values are filled.
+	f.Intrinsic.Control.If(v.Local.sVendor.Trim, =, "")
+		f.Intrinsic.UI.Msgbox("Please select a Vendor")
+		f.Intrinsic.Control.ExitSub
+	f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.If(v.Local.sCertification.Trim, =, "")
+		f.Intrinsic.UI.Msgbox("Please select a Certification")
+		f.Intrinsic.Control.ExitSub
+	f.Intrinsic.Control.EndIf
+	'Check Key Values do not exist in DB.
+	f.ODBC.Connection!con.OpenCompanyConnection
+	 	f.Intrinsic.String.Build("Select * from GCG_5731_VENDOR_CERT where Vendor = '{0}' and Certification = '{1}'", v.Local.sVendor,  v.Local.sCertification, v.Local.sSQL)
+	 	f.ODBC.Connection!con.ExecuteAndReturn(v.Local.sSQL, v.Local.sRet)
+	f.ODBC.Connection!con.Close
+	f.Intrinsic.Control.If(v.Local.sRet.Trim, <>, "")
+		f.Intrinsic.UI.Msgbox("Selected Vendor and Certification already exists.")
+		f.Intrinsic.Control.ExitSub
+	f.Intrinsic.Control.EndIf
+	'Create Insert String
+	f.ODBC.Connection!con.OpenCompanyConnection
+	 	f.Intrinsic.String.Build("Insert into  GCG_5731_VENDOR_CERT (Vendor, Vendor_Name, Certification, Description, Arc_Liason, Arc_Email, Vend_Liason, Vend_Phone, Vend_Email, Start_Date, End_Date, Oasis_No, Valid) Values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '1')", v.Local.sVendor.Trim, v.Local.sVendorName.Trim, v.Local.sCertification.Trim, v.Local.sDecription.Trim, v.Local.sArcLiason.Trim, v.Local.sArcEmail.Trim, v.Local.sVendLiason.Trim, v.Local.sVendPhone.Trim, v.Local.sVendEmail.Trim, v.Local.dStartDate.PervasiveDate, v.Local.dEndDate.PervasiveDate, v.Local.sOasisName.Trim, v.Local.sSQL)
+	 	'Insert Record to DB.
+	 	f.ODBC.Connection!con.Execute(v.Local.sSQL)
+	f.ODBC.Connection!con.Close	
+	'Clear Textboxes.
+	f.Intrinsic.Control.CallSub(clearTxtboxes)
+	'Refresh Tables.
+	f.Intrinsic.Control.CallSub(cmdRefresh_Click)
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdAdd_Click.End
+
+Program.Sub.Form_UnLoad.Start
+f.Intrinsic.Control.Try
+	f.Intrinsic.Control.End
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.Form_UnLoad.End
+
+Program.Sub.cmdSaveChanges_Click.Start
+f.Intrinsic.Control.Try
+	'Accept Changes,
+	f.Data.DataTable.AcceptChanges("displayDT")
+	f.Data.DataView.ToDataTable("displayDT", "displayDV", "saveDT")
+	f.Data.DataTable.RemoveColumn("saveDT", "Vendor_Name_Full")
+	f.Data.DataTable.AcceptChanges("saveDT")
+	'Save To DB	
+	f.ODBC.Connection!con.OpenCompanyConnection
+	 	f.Data.DataTable.SaveToDB("saveDT", "con", "GCG_5731_VENDOR_CERT", "VENDOR*!*CERTIFICATION*!*ID_PK", 256)
+	f.ODBC.Connection!con.Close
+	'Close Temp Save DT
+	f.Data.DataTable.Close("saveDT")
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdSaveChanges_Click.End
+
+Program.Sub.createDisplayDT.Start
+f.Intrinsic.Control.Try
+	'Load Tables
+	f.ODBC.Connection!con.OpenCompanyConnection
+		f.Data.DataTable.CreateFromSQL("displayDT", "con", "Select * from GCG_5731_VENDOR_CERT", True)
+	f.ODBC.Connection!con.Close	
+	'Create Grouping Column
+	f.Data.DataTable.AddExpressionColumn("displayDT", "Vendor_Name_Full", "String", "Vendor + ': ' + Vendor_Name")
+	'Create Gridviews Display
+	f.Data.DataView.Create("displayDT", "displayDV", 22, "Valid = 'True'",  )
+	gui.F_Vendor_Dash.GsGcDisplay.AddGridviewFromDataview("displayGV", "displayDT", "displayDV")
+	gui.F_Vendor_Dash.GsGcDisplay.MainView("displayGV")
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.createDisplayDT.End
+
+Program.Sub.loadGridProperties.Start
+v.Local.iCnt.Declare
+v.Local.sFields.Declare
+v.Local.iVisibleIndex.Declare
+
+f.Intrinsic.Control.Try
+	'Load Grid Properties for Display
+	f.Intrinsic.String.Split(v.DataTable.DisplayDT.FieldNames, "*!*", v.Local.sFields)
+	f.Intrinsic.Control.For(v.Local.iCnt, 0, v.Local.sFields.UBound, 1)
+		gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", v.Local.sFields(v.Local.iCnt), "HeaderFontBold", True)
+		gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", v.Local.sFields(v.Local.iCnt), "Visible", True)
+		gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", v.Local.sFields(v.Local.iCnt), "ReadOnly", False)
+		gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", v.Local.sFields(v.Local.iCnt), "AllowEdit", True)
+		gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", v.Local.sFields(v.Local.iCnt), "HeaderHAlignment", "Near")
+		gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", v.Local.sFields(v.Local.iCnt), "CellHAlignment", "Near")
+'		gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", v.Local.sFields(v.Local.iCnt), "HeaderBackColor", v.Color.GSS)
+'		gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", v.Local.sFields(v.Local.iCnt), "HeaderForeColor", v.Color.White)
+	f.Intrinsic.Control.Next(v.Local.iCnt)
+	
+	'GridView Properties
+	gui.F_Vendor_Dash.GsGcDisplay.BestFitColumns("displayGV")
+	gui.F_Vendor_Dash.GsGcDisplay.SetGridviewProperty("displayGV", "OptionsViewColumnAutoWidth", False)
+	gui.F_Vendor_Dash.GsGcDisplay.SetGridviewProperty("displayGV", "OptionsViewShowAutoFilterRow", True)
+	'gui.F_Vendor_Dash.GsGcDisplay.SetGridviewProperty("displayGV", "OptionsFindAlwaysVisible", True)
+	'gui.F_Vendor_Dash.GsGcDisplay.SetGridviewProperty("displayGV", "Showgrouppanel", True)
+	
+	'Editable
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Vendor", "ReadOnly", True)
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Vendor", "AllowEdit", False)
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Certification", "ReadOnly", True)
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Certification", "AllowEdit", False)
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "ID_PK", "ReadOnly", True)
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "ID_PK", "AllowEdit", False)
+	'Caption
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Vendor", "Caption", "Vendor")
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Vendor_Name", "Caption", "Vendor Name")
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Certification", "Caption", "Certification")
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Description", "Caption", "Description")
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "ARC_LIASON", "Caption", "ARC-Tronics Represantative")
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "ARC_EMAIL", "Caption", "ARC-Tronics Email")
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "VEND_LIASON", "Caption", "Vendor Represantative")
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "VEND_PHONE", "Caption", "Vendor Phone")
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "VEND_EMAIL", "Caption", "Vendor Email")
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "START_DATE", "Caption", "Start Date")
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "END_DATE", "Caption", "Expiration Date")
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "OASIS_NO", "Caption", "OASIS")
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "ID_PK", "Caption", "PK")
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Valid", "Caption", "Valid")
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Vendor_Name_Full", "Caption", "Vendor")
+	'Visible
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "ID_PK", "Visible", False)
+	'Create Grouping Property
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Vendor_Name_Full", "GroupIndex", 0)	
+	'Allow Edit
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Vendor", "ReadOnly", True)
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Vendor", "AllowEdit", False)
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Certification", "ReadOnly", True)
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Certification", "AllowEdit", False)
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "ID_PK", "ReadOnly", True)
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "ID_PK", "AllowEdit", False)
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Valid", "ReadOnly", True)
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Valid", "AllowEdit", False)
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Vendor_Name_Full", "ReadOnly", True)
+	gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Vendor_Name_Full", "AllowEdit", False)
+	
+	'Possible Column Properties 
+	'gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Default", "ReadOnly", False)
+	'gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Default", "AllowEdit", True)
+	'gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Default", "HeaderHAlignment", "Center")
+	'gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Default", "CellHAlignment", "Center")
+	'gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Default", "Caption", "Default")
+	'gui.F_Vendor_Dash.GsGcDisplay.SetColumnProperty("displayGV", "Default", "Visible", False)
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.loadGridProperties.End
+
+Program.Sub.cmd_Clear_Click.Start
+f.Intrinsic.Control.Try
+	f.Intrinsic.Control.CallSub(clearTxtboxes)
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.cmd_Clear_Click.End
+
+Program.Sub.clearTxtboxes.Start
+f.Intrinsic.Control.Try
+	gui.F_Vendor_Dash.txtVendor.Text("")
+	gui.F_Vendor_Dash.txtVendorName.Text("")
+	gui.F_Vendor_Dash.txtCertification.Text("")
+	gui.F_Vendor_Dash.txtCertDesc.Text("")
+	gui.F_Vendor_Dash.txtCertLiason.Text("")
+	gui.F_Vendor_Dash.txtCertEmail.Text("")
+	gui.F_Vendor_Dash.txtVendLiason.Text("")
+	gui.F_Vendor_Dash.txtVendPhone.Text("")
+	gui.F_Vendor_Dash.txtVendEmail.Text("")
+	gui.F_Vendor_Dash.dtpVendStartDate.Value(v.Ambient.Date)
+	gui.F_Vendor_Dash.dtpVendEndDate.Value(v.Ambient.Date)
+	gui.F_Vendor_Dash.txtVendOasis.Text("")
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.clearTxtboxes.End
+
+Program.Sub.chkValid_Click.Start
+v.Local.iShowValid.Declare
+f.Intrinsic.Control.Try
+	v.Local.iShowValid.Set(v.Screen.F_Vendor_Dash!chkValid.Value)
+	f.Intrinsic.Control.If(v.Local.iShowValid, =, 1)
+		f.Data.DataView.SetFilter("displayDT", "displayDV", "Valid = 'True'")
+	f.Intrinsic.Control.Else
+		f.Data.DataView.SetFilter("displayDT", "displayDV", "")
+	f.Intrinsic.Control.EndIf
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.chkValid_Click.End
+Program.Sub.loadIcon.Start
+v.Local.sIcon.Declare
+f.Intrinsic.Control.Try
+	'sets the icon
+	f.Intrinsic.String.Build("{0}\ART\gss2.ico", v.Caller.GlobalDir, v.Local.sIcon)
+	gui.F_Vendor_Dash..Icon(v.Local.sIcon)
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.loadIcon.End
+
+Program.Sub.Comments.Start
+${$5$}$3.0.0.0$}$1
+${$6$}$aanazco$}$20200309164943203$}$7aQAV3Tor/tR9bkuakHbuzQlHVuXCGOzKfzv6dmZ7Y9+jCIAbP03uo0H+mFfM7uhQ69+qWUEVKA=
+Program.Sub.Comments.End
